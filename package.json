@@ -1,0 +1,11 @@
+{
+  "name": "denki",
+  "version": "1.0.0",
+  "description": "Denki joins the battle!",
+  "main": "bot.js",
+  "author": "Alexis Renderos",
+  "dependencies": {
+    "discord.io": "github:woor/discord.io#gateway_v6",
+    "winston": "^2.4.0"
+  }
+}
