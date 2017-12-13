@@ -1,6 +1,9 @@
 var Discord = require('discord.io');
 var logger = require('winston');
 var auth = require('./auth.json');
+const Cleverbot = require("cleverbot-node");
+const client = new Discord.Client();
+const clbot = new Cleverbot;
 // Configure logger settings
 logger.remove(logger.transports.Console);
 logger.add(logger.transports.Console, {
@@ -75,6 +78,28 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                     message: 'If you were looking for Rythm, try using "!" instead of "#".'
                 });
             break;
+            case 'kickoff':
+                bot.sendMessage({
+                    to: channelID,
+                    message: 'https://days.to/6-january/2018'
+                });
+            case 'clever':
+                bot.sendMessage({
+                    to: channelID,
+                    message: 'Initializing higher thinking...'
+                });
+                 bot.sendMessage({
+                    to: channelID,
+                    message: 'Putting on my glasses...'
+                });
+                bot.sendMessage({
+                    to: channelID,
+                    message: 'Sweeping up the bugs...'
+                });
+                bot.sendMessage({
+                    to: channelID,
+                    message: 'Greetings, I am Denki.'
+                });
          }
      }
 });
