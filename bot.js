@@ -1,9 +1,6 @@
 var Discord = require('discord.io');
 var logger = require('winston');
 var auth = require('./auth.json');
-const Cleverbot = require("cleverbot-node");
-const client = new Discord.Client();
-const clbot = new Cleverbot;
 // Configure logger settings
 logger.remove(logger.transports.Console);
 logger.add(logger.transports.Console, {
@@ -100,6 +97,17 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                     to: channelID,
                     message: 'Greetings, I am Denki.'
                 });
+            case 'recyclerush':
+                bot.sendMessage({
+                    to: channelID,
+                    message: 'https://i.imgur.com/bYDhFbQ.jpg'
+                });
+            case 'civilwar':
+                bot.sendMessage({
+                    to: channelID,
+                    message: 'https://i.imgur.com/sd5OO1Q.jpg'
+                });
+
          }
      }
 });
