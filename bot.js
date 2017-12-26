@@ -32,7 +32,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                 message: 'Daddy?'
             });
     }
-    if (message.substring(0, 1) == '#') {
+    if (message.substring(0, 1) == '$') {
         var args = message.substring(1).split(' ');
         var cmd = args[0];
        
@@ -72,7 +72,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                 });
                 bot.sendMessage({
                     to: channelID,
-                    message: 'If you were looking for Rythm, try using "!" instead of "#".'
+                    message: 'If you were looking for Rythm, try using "!" instead of "$".'
                 });
             break;
             case 'kickoff':
@@ -107,7 +107,16 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                     to: channelID,
                     message: 'https://i.imgur.com/sd5OO1Q.jpg'
                 });
-
+            case 'vexvideo':
+                bot.sendMessage({
+                    to: channelID,
+                    message: 'Check out the latest VEX Video by Alexis! https://youtu.be/LgbIsyNYmNQ'
+                });
+            case 'alexis':
+            	bot.sendMessage({
+            		to: channelID,
+            		message: 'I know that guy! He made me!'
+            	})
          }
      }
 });
