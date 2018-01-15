@@ -74,6 +74,10 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                     to: channelID,
                     message: 'If you were looking for Rythm, try using "!" instead of "$".'
                 });
+                bot.sendMessage({
+                    to: channelID,
+                    message: 'List of commands: "ping", "meat", "alooksis", "help", "kickoff", "clever", "recyclerush", "civilwar", "vexvideo", "powerup", "alexis", "hockeyjerseys".'
+                });
             break;
             case 'kickoff':
                 bot.sendMessage({
@@ -112,11 +116,21 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                     to: channelID,
                     message: 'Check out the latest VEX Video by Alexis! https://youtu.be/LgbIsyNYmNQ'
                 });
+            case 'powerup':
+                bot.sendMessage({
+                    to: channelID,
+                    message: 'https://i.imgur.com/h9TUEUX.jpg'
+                });
             case 'alexis':
             	bot.sendMessage({
             		to: channelID,
             		message: 'I know that guy! He made me!'
-            	})
+            	});
+            case 'hockeyjerseys':
+                bot.sendMessage({
+                    to: channelID,
+                    message: 'You should check out the new hockey jersey designs Alexis made!'
+                });
          }
      }
 });
