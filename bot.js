@@ -48,7 +48,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
             case 'meat':
                 bot.sendMessage({
                     to: channelID,
-                    message: '@everyone'
+                    message: 'You should watch mateus stream!'
                 });
                 bot.sendMessage({
                     to: channelID,
@@ -69,7 +69,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                 bot.sendMessage({
                     to: channelID,
                     message: 'Pfft, help? What kind of bot do you think I am?'
-                });
+                }); 
                 bot.sendMessage({
                     to: channelID,
                     message: 'If you were looking for Rythm, try using "!" instead of "$".'
@@ -130,6 +130,11 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                 bot.sendMessage({
                     to: channelID,
                     message: 'You should check out the new hockey jersey designs Alexis made!'
+                });
+            case 'katana':
+                bot.sendMessage({
+                    to: channelID,
+                    message: 'It looks like Keyzer is going to make another Katana. ohboy.'
                 });
          }
      }
