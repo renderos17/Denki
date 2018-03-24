@@ -136,6 +136,27 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                     to: channelID,
                     message: 'It looks like Keyzer is going to make another Katana. ohboy.'
                 });
+            case 'whatarewegoingtodo':
+                bot.sendMessage({
+                    to: channelID,
+                    message: 'WE"RE GONNA FUCKIN WIN DAMMIT'
+                });
+                bot.sendMessage({
+                    to: channelID,
+                    message: 'WEVE GOT THE CODE'
+                });
+               bot.sendMessage({
+                    to: channelID,
+                    message: 'WEVE GOT THE KIDS'
+                });
+                bot.sendMessage({
+                    to: channelID,
+                    message: 'HELL, WEVE EVEN GOT THE BOT'
+                });
+                                bot.sendMessage({
+                    to: channelID,
+                    message: 'THIS IS OUR YEAR, AND WERE GONNA WIN'
+                });
          }
      }
 });
