@@ -139,7 +139,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
             case 'whatarewegoingtodo':
                 bot.sendMessage({
                     to: channelID,
-                    message: 'WE"RE GONNA FUCKIN WIN DAMMIT'
+                    message: 'WERE GONNA FUCKIN WIN DAMMIT'
                 });
                 bot.sendMessage({
                     to: channelID,
@@ -153,10 +153,11 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                     to: channelID,
                     message: 'HELL, WEVE EVEN GOT THE BOT'
                 });
-                                bot.sendMessage({
+                bot.sendMessage({
                     to: channelID,
                     message: 'THIS IS OUR YEAR, AND WERE GONNA WIN'
                 });
+                break;
          }
      }
 });
