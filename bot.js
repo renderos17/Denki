@@ -84,6 +84,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                     to: channelID,
                     message: 'https://days.to/6-january/2018'
                 });
+            break;
             case 'clever':
                 bot.sendMessage({
                     to: channelID,
@@ -101,41 +102,49 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                     to: channelID,
                     message: 'Greetings, I am Denki.'
                 });
+            break;
             case 'recyclerush':
                 bot.sendMessage({
                     to: channelID,
                     message: 'https://i.imgur.com/bYDhFbQ.jpg'
                 });
+            break;
             case 'civilwar':
                 bot.sendMessage({
                     to: channelID,
                     message: 'https://i.imgur.com/sd5OO1Q.jpg'
                 });
+            break;
             case 'vexvideo':
                 bot.sendMessage({
                     to: channelID,
                     message: 'Check out the latest VEX Video by Alexis! https://youtu.be/LgbIsyNYmNQ'
                 });
+            break;
             case 'powerup':
                 bot.sendMessage({
                     to: channelID,
                     message: 'https://i.imgur.com/h9TUEUX.jpg'
                 });
+            break;
             case 'alexis':
             	bot.sendMessage({
             		to: channelID,
             		message: 'I know that guy! He made me!'
             	});
+            break;
             case 'hockeyjerseys':
                 bot.sendMessage({
                     to: channelID,
                     message: 'You should check out the new hockey jersey designs Alexis made!'
                 });
+            break;
             case 'katana':
                 bot.sendMessage({
                     to: channelID,
                     message: 'It looks like Keyzer is going to make another Katana. ohboy.'
                 });
+            break;
             case 'whatarewegoingtodo':
                 bot.sendMessage({
                     to: channelID,
@@ -157,7 +166,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                     to: channelID,
                     message: 'THIS IS OUR YEAR, AND WERE GONNA WIN'
                 });
-                break;
+            break;
          }
      }
 });
