@@ -76,13 +76,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                 });
                 bot.sendMessage({
                     to: channelID,
-                    message: 'List of commands: "ping", "meat", "alooksis", "help", "kickoff", "clever", "recyclerush", "civilwar", "vexvideo", "powerup", "alexis", "hockeyjerseys".'
-                });
-            break;
-            case 'kickoff':
-                bot.sendMessage({
-                    to: channelID,
-                    message: 'https://days.to/6-january/2018'
+                    message: 'List of commands: "ping", "meat", "alooksis", "help", "clever", "recyclerush", "civilwar", "vexvideo", "powerup", "alexis", "hockeyjerseys", "katana", "whatarewegoingtodo", "screech".'
                 });
             break;
             case 'clever':
@@ -165,6 +159,16 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                 bot.sendMessage({
                     to: channelID,
                     message: 'THIS IS OUR YEAR, AND WERE GONNA WIN'
+                });
+            break;
+            case 'screech':
+                bot.sendMessage({
+                    to: channelID,
+                    message: '*keyeztisic screeching*'
+                });
+                bot.sendMessage({
+                    to: channelID,
+                    message: 'https://cdn.discordapp.com/attachments/380230187431886870/424262304436322305/PicsArt_03-16-12.46.44.jpg'
                 });
             break;
          }
