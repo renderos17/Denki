@@ -171,6 +171,12 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                     message: 'https://cdn.discordapp.com/attachments/380230187431886870/424262304436322305/PicsArt_03-16-12.46.44.jpg'
                 });
             break;
+            case 'sleepytime':
+                bot.sendMessage({
+                    to: channelID,
+                    message: 'Sleep tight!'
+                });
+            break;
          }
      }
 });
