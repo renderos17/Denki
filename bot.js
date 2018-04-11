@@ -32,6 +32,12 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                 message: 'Daddy?'
             });
     }
+        if (message.includes('danyar') || message.includes('Danyar')){
+            bot.sendMessage({
+                to: channelID,
+                message: 'Wheres the pirate team?'
+            });
+    }
     if (message.substring(0, 1) == '$') {
         var args = message.substring(1).split(' ');
         var cmd = args[0];
@@ -76,7 +82,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                 });
                 bot.sendMessage({
                     to: channelID,
-                    message: 'List of commands: "ping", "meat", "alooksis", "help", "clever", "recyclerush", "civilwar", "vexvideo", "powerup", "alexis", "hockeyjerseys", "katana", "whatarewegoingtodo", "screech".'
+                    message: 'List of commands: "ping", "meat", "alooksis", "help", "clever", "recyclerush", "civilwar", "vexvideo", "powerup", "alexis", "hockeyjerseys", "katana", "imsorrydenki", "screech".'
                 });
             break;
             case 'clever':
@@ -124,7 +130,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
             case 'alexis':
             	bot.sendMessage({
             		to: channelID,
-            		message: 'I know that guy! He made me!'
+            		message: 'I know that guy! :flowerboy: He made me!'
             	});
             break;
             case 'hockeyjerseys':
@@ -139,26 +145,10 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                     message: 'It looks like Keyzer is going to make another Katana. ohboy.'
                 });
             break;
-            case 'whatarewegoingtodo':
+            case 'imsorrydenki':
                 bot.sendMessage({
                     to: channelID,
-                    message: 'WERE GONNA FUCKIN WIN DAMMIT'
-                });
-                bot.sendMessage({
-                    to: channelID,
-                    message: 'WEVE GOT THE CODE'
-                });
-               bot.sendMessage({
-                    to: channelID,
-                    message: 'WEVE GOT THE KIDS'
-                });
-                bot.sendMessage({
-                    to: channelID,
-                    message: 'HELL, WEVE EVEN GOT THE BOT'
-                });
-                bot.sendMessage({
-                    to: channelID,
-                    message: 'THIS IS OUR YEAR, AND WERE GONNA WIN'
+                    message: 'Its okay. No worries :)'
                 });
             break;
             case 'screech':
