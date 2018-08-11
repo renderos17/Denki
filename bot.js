@@ -167,6 +167,13 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                     message: 'Sleep tight!'
                 });
             break;
+            case 'despair':
+                bot.sendMessage({
+                    to: channelID,
+                    message: 'https://i.imgur.com/b0cLR3J.gifv'
+                });
+            break;
+
          }
      }
 });
