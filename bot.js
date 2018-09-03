@@ -61,6 +61,12 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                     message: 'https://www.twitch.tv/meateus'
                 });
             break;
+	    case 'rythm':
+                bot.sendMessage({
+                    to: channelID,
+                    message: 'Oh, Rythm? Yeah, he's okay I guess. Not as cool as my creator. And definitely not as cool as danyar.'
+                });
+            break;
             case 'alooksis':
                 bot.sendMessage({
                     to: channelID,
@@ -68,7 +74,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                 });
                 bot.sendMessage({
                     to: channelID,
-                    message: 'https://www.twitch.tv/renderos17'
+                    message: 'https://www.twitch.tv/renderos_17'
                 });
             break;
             case 'help':
